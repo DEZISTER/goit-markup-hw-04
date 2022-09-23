@@ -1,0 +1,459 @@
+:root {
+    /*Background Colors for works*/
+    --page-bg-color: #FFFFFF;
+    --first-bg-color: #2F303A;
+    --second-bg-color: #F5F4FA;
+
+    /*Text Colors for works*/
+    --main-text-color: #212121;
+    --second-text-color: #FFFFFF;
+    --description-text-color: #757575;
+    --logo-text-color: #000000;
+
+    /*Text Colors for hover and logo*/
+    --active-text-color: #2196F3;
+
+    --header-border-bottom: #ECECEC;
+
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+
+    /*Icons Colors*/
+    --unactive-icon: #AFB1B8;
+    --active-icon: #FFFFFF;
+
+    --active-bg-icon: #2196F3;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--page-bg-color);
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 400;
+    color: var(--main-text-color);
+    letter-spacing: 0.03em;
+}
+
+.container {
+    width: 1600px;
+    margin: auto;
+}
+
+.content-container {
+    width: 1170px;
+    margin: auto;
+}
+
+.header {
+    border-bottom: 1px solid var(--header-border-bottom);
+}
+
+.header-menu {
+    width: 519px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container, .contact-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.main-screen, .footer {
+    background: var(--first-bg-color);
+}
+
+.main-screen {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/bg-main-section.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.our-team {
+    background: var(--second-bg-color);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-style: normal;
+}
+
+.btn {
+    border: none;
+    background: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logo {
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.logo-word {
+    color: var(--active-text-color);
+}
+
+.logo-white {
+    color: var(--second-text-color);
+}
+
+.logo-black {
+    color: var(--logo-text-color);
+}
+
+.navigation-element {
+    font-size: 14px;
+    line-height: 1.17;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.navigation .navigation-element:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact-list li:not(:last-child) {
+    margin-right: 30px
+}
+
+.navigation-element:hover, .navigation-element:focus, .navigation-element-active {
+    color: var(--active-text-color);
+    fill: var(--active-text-color);
+}
+
+.navigation-contact {
+    color: var(--description-text-color);
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon {
+    margin-right: 10px;
+}
+
+.order-btn {
+    background: var(--active-text-color);
+    color: var(--second-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    letter-spacing: 0.049em;
+    margin-top: 30px;
+    padding: 10px 32px;
+    width: 216px;
+    border: 1px solid var(--active-text-color);
+}
+
+.order-btn:hover, .order-btn:focus {
+    background: none;
+    color: var(--active-text-color);
+}
+
+.address-element {
+    color: var(--footer-text-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.address-element:hover, .address-element:focus {
+    color: var(--second-text-color);
+}
+
+.btn-menu-element {
+    background: var(--second-bg-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    margin: auto;
+    padding: 6px 22px;
+}
+
+.btn-menu-element:hover, .btn-menu-element:focus {
+    background: var(--active-text-color);
+    color: var(--second-text-color);
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12);
+    padding: 6px 25px;
+}
+
+.main-title {
+    font-size: 44px;
+    line-height: 1.35;
+    font-weight: 900;
+    color: var(--second-text-color);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.widgets-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--second-bg-color);
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+}
+
+.widgets-description {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--description-text-color);
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-card {
+    font-size: 16px;
+    line-height: 1.19;
+    width: 270px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.card-context {
+    margin: 30px auto;
+}
+
+.card-description {
+    color: var(--description-text-color);
+    margin: 10px auto 16px;
+}
+
+.card-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-menu li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.card-menu-button {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 44px;
+}
+
+.footer-icon-button {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon-button .footer-icon {
+    fill: var(--active-icon);
+}
+
+.card-icon {
+    fill: var(--unactive-icon);
+}
+
+.card-menu-button:hover, .card-menu-button:focus {
+    background: var(--active-bg-icon);
+}
+
+.card-menu-button:hover .card-icon, .card-menu-button:focus .card-icon {
+    fill: var(--active-icon);
+}
+
+.team-card {
+    background: var(--second-text-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.project-card {
+    border: 1px solid #EEEEEE;
+    width: 370px;
+    margin-top: 30px;
+}
+
+.project-card-context {
+    margin: 20px 24px;
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--description-text-color);
+}
+
+.main-screen, .main-screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.main-screen-container {
+    margin: 200px auto;
+    width: 696px;
+    text-align: center;
+    flex-flow: column;
+}
+
+section {
+    padding: 94px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#widgets {
+    padding-bottom: 0;
+}
+
+.widgets-lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.widgets-lists li {
+    width: 270px;
+}
+
+.widgets-lists li p {
+    margin-top: 10px;
+}
+
+.out-work-list {
+    display: flex;
+    justify-content: space-between;
+    /*height: 294px;*/
+}
+
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-clients-icon {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-icon {
+    fill: var(--unactive-icon);
+}
+
+.link-clients-icon:hover, .link-clients-icon:focus {
+    border: 1px solid var(--active-bg-icon);
+}
+
+.link-clients-icon:hover .clients-icon, .link-clients-icon:focus .clients-icon {
+    fill: var(--active-bg-icon);
+}
+
+.footer {
+    display: flex;
+}
+
+.footer-container {
+    margin: 60px auto;
+    display: flex;
+}
+
+.address-container {
+    margin-right: 70px;
+}
+
+.footer-titles {
+    margin-bottom: 20px;
+}
+
+.address {
+    display: flex;
+    flex-flow: column;
+    width: 231px;
+}
+
+.address a {
+    margin-top: 9px;
+    display: flex;
+}
+
+.address p {
+    margin-top: 20px;
+    display: flex;
+}
+
+.btn-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn-menu li:not(:last-child) {
+    margin-right: 8px;
+}
+
+.footer-links-title {
+    height: 31px;
+    display: flex;
+    align-items: center;
+    color: var(--second-text-color);
+}
